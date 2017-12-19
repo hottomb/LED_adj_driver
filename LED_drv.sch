@@ -21546,8 +21546,8 @@ In this library the device names are the same as the pin names of the symbols, t
 </classes>
 <parts>
 <part name="IC1" library="TI" deviceset="LM3409" device=""/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R1206"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R1206"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="T1" library="miscrel" deviceset="IRLR9343PBF" device=""/>
@@ -21568,12 +21568,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="S1" library="switch-omron" deviceset="SW_DUMMY" device=""/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C1206" value="470p/50V"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="15k"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R1206" value="15k"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="IC2" library="linear" deviceset="LM393" device="D"/>
 <part name="R8" library="resistor" deviceset="R-EU_" device="R0805" value="100k"/>
-<part name="R9" library="resistor" deviceset="R-EU_" device="R0805" value="100k"/>
-<part name="R10" library="resistor" deviceset="R-EU_" device="R0805" value="150k"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="R1206" value="100k"/>
+<part name="R10" library="rcl" deviceset="R-EU_" device="R1206" value="180k"/>
 <part name="R11" library="resistor" deviceset="R-EU_" device="R0805" value="100k"/>
 <part name="R12" library="resistor" deviceset="R-EU_" device="R0805" value="47k"/>
 <part name="C6" library="rcl" deviceset="C-US" device="075-032X103" value="100n/400V"/>
@@ -21631,7 +21631,21 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="PAD8" library="wirepad" deviceset="SMD2" device=""/>
 <part name="PAD9" library="wirepad" deviceset="SMD2" device=""/>
 <part name="PAD10" library="wirepad" deviceset="SMD2" device=""/>
-<part name="R27" library="resistor" deviceset="R-EU_" device="R0805" value="0"/>
+<part name="R27" library="rcl" deviceset="R-EU_" device="R1206" value="0"/>
+<part name="R28" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="PAD11" library="wirepad" deviceset="SMD2" device=""/>
+<part name="R32" library="resistor" deviceset="R-EU_" device="R0805" value="100k"/>
+<part name="PAD12" library="wirepad" deviceset="SMD2" device=""/>
+<part name="PAD13" library="wirepad" deviceset="SMD2" device=""/>
+<part name="PAD14" library="wirepad" deviceset="SMD2" device=""/>
+<part name="PAD15" library="wirepad" deviceset="SMD2" device=""/>
+<part name="PAD16" library="wirepad" deviceset="SMD2" device=""/>
+<part name="PAD17" library="wirepad" deviceset="SMD2" device=""/>
+<part name="PAD18" library="wirepad" deviceset="SMD2" device=""/>
+<part name="PAD19" library="wirepad" deviceset="SMD2" device=""/>
+<part name="PAD20" library="wirepad" deviceset="SMD2" device=""/>
+<part name="PAD21" library="wirepad" deviceset="SMD2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21670,6 +21684,9 @@ uplywnosci diody</text>
 <text x="393.7" y="-22.86" size="1.778" layer="97">zenerka opcjonalnie, by 
 upewnic wylaczenie MOSa</text>
 <text x="309.88" y="38.1" size="1.778" layer="91">podlacz do zasilacza w srodku</text>
+<text x="243.84" y="-35.56" size="1.778" layer="97">active high</text>
+<text x="-25.4" y="58.42" size="1.27" layer="97">TO Vcc !!!!</text>
+<text x="-12.7" y="15.24" size="1.27" layer="91">pulldown</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="27.94" y="27.94"/>
@@ -21761,6 +21778,20 @@ upewnic wylaczenie MOSa</text>
 <instance part="PAD9" gate="1" x="228.6" y="30.48" rot="R270"/>
 <instance part="PAD10" gate="1" x="220.98" y="-33.02"/>
 <instance part="R27" gate="G$1" x="317.5" y="-33.02" rot="R270"/>
+<instance part="R28" gate="G$1" x="-10.16" y="7.62" rot="R90"/>
+<instance part="GND16" gate="1" x="-10.16" y="0"/>
+<instance part="PAD11" gate="1" x="241.3" y="-53.34" rot="R90"/>
+<instance part="R32" gate="G$1" x="241.3" y="-40.64" rot="R270"/>
+<instance part="PAD12" gate="1" x="-27.94" y="40.64"/>
+<instance part="PAD13" gate="1" x="-27.94" y="15.24"/>
+<instance part="PAD14" gate="1" x="-15.24" y="38.1" rot="R180"/>
+<instance part="PAD15" gate="1" x="-15.24" y="25.4" rot="R180"/>
+<instance part="PAD16" gate="1" x="-10.16" y="33.02" rot="R270"/>
+<instance part="PAD17" gate="1" x="-27.94" y="20.32"/>
+<instance part="PAD18" gate="1" x="88.9" y="-5.08" rot="R180"/>
+<instance part="PAD19" gate="1" x="83.82" y="-20.32" rot="R180"/>
+<instance part="PAD20" gate="1" x="53.34" y="60.96" rot="R180"/>
+<instance part="PAD21" gate="1" x="78.74" y="-20.32"/>
 </instances>
 <busses>
 </busses>
@@ -21796,15 +21827,22 @@ upewnic wylaczenie MOSa</text>
 <pinref part="C4" gate="G$1" pin="+"/>
 <wire x1="50.8" y1="35.56" x2="76.2" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="E"/>
-<wire x1="-17.78" y1="35.56" x2="-17.78" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="35.56" x2="-17.78" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="38.1" x2="-17.78" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="55.88" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="55.88" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="55.88" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
 <junction x="50.8" y="55.88"/>
 <pinref part="S1" gate="G$1" pin="S"/>
-<wire x1="-25.4" y1="35.56" x2="-25.4" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="35.56" x2="-25.4" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="40.64" x2="-25.4" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="55.88" x2="-17.78" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-17.78" y="55.88"/>
+<pinref part="PAD12" gate="1" pin="P"/>
+<junction x="-25.4" y="40.64"/>
+<pinref part="PAD14" gate="1" pin="P"/>
+<junction x="-17.78" y="38.1"/>
+<pinref part="PAD20" gate="1" pin="P"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -21831,6 +21869,9 @@ upewnic wylaczenie MOSa</text>
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="C3" gate="G$1" pin="-"/>
 <wire x1="81.28" y1="-20.32" x2="81.28" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="PAD19" gate="1" pin="P"/>
+<junction x="81.28" y="-20.32"/>
+<pinref part="PAD21" gate="1" pin="P"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="-"/>
@@ -21839,7 +21880,9 @@ upewnic wylaczenie MOSa</text>
 <segment>
 <pinref part="R6" gate="G$1" pin="A"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="-17.78" y1="22.86" x2="-17.78" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="PAD15" gate="1" pin="P"/>
+<junction x="-17.78" y="25.4"/>
+<wire x1="-17.78" y1="25.4" x2="-17.78" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -21879,6 +21922,10 @@ upewnic wylaczenie MOSa</text>
 <pinref part="C9" gate="G$1" pin="-"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="289.56" y1="20.32" x2="289.56" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R28" gate="G$1" pin="1"/>
+<pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -21950,6 +21997,7 @@ upewnic wylaczenie MOSa</text>
 <wire x1="10.16" y1="-27.94" x2="73.66" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="-27.94" x2="73.66" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="73.66" y="-5.08"/>
+<pinref part="PAD18" gate="1" pin="P"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -21957,16 +22005,8 @@ upewnic wylaczenie MOSa</text>
 <pinref part="R6" gate="G$1" pin="S"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="-12.7" y1="30.48" x2="-10.16" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="EN"/>
-<wire x1="15.24" y1="25.4" x2="7.62" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="25.4" x2="7.62" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="12.7" x2="-25.4" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="12.7" x2="-25.4" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="P"/>
+<pinref part="PAD16" gate="1" pin="P"/>
+<junction x="-10.16" y="30.48"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -22114,16 +22154,30 @@ upewnic wylaczenie MOSa</text>
 <junction x="416.56" y="33.02"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="ACTIVATION" class="0">
 <segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="246.38" y1="-27.94" x2="238.76" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<pinref part="IC2" gate="A" pin="+IN"/>
-<wire x1="241.3" y1="-12.7" x2="238.76" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="-12.7" x2="236.22" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="-27.94" x2="238.76" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="238.76" y="-12.7"/>
+<pinref part="IC1" gate="G$1" pin="EN"/>
+<wire x1="15.24" y1="25.4" x2="7.62" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="25.4" x2="7.62" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="12.7" x2="-10.16" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="12.7" x2="-25.4" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="12.7" x2="-25.4" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="P"/>
+<label x="-25.4" y="12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+<junction x="-10.16" y="12.7"/>
+<pinref part="PAD13" gate="1" pin="P"/>
+<wire x1="-25.4" y1="15.24" x2="-25.4" y2="20.32" width="0.1524" layer="91"/>
+<junction x="-25.4" y="15.24"/>
+<pinref part="PAD17" gate="1" pin="P"/>
+<wire x1="-25.4" y1="20.32" x2="-25.4" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-25.4" y="20.32"/>
+</segment>
+<segment>
+<pinref part="R32" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="-50.8" x2="241.3" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="PAD11" gate="1" pin="P"/>
+<label x="241.3" y="-48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="5V1_ZEN" class="0">
@@ -22368,6 +22422,20 @@ upewnic wylaczenie MOSa</text>
 <segment>
 <pinref part="R25" gate="G$1" pin="1"/>
 <pinref part="R27" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="EER" class="0">
+<segment>
+<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="IC2" gate="A" pin="+IN"/>
+<junction x="241.3" y="-12.7"/>
+<wire x1="241.3" y1="-12.7" x2="236.22" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="R32" gate="G$1" pin="1"/>
+<wire x1="241.3" y1="-35.56" x2="241.3" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="241.3" y1="-27.94" x2="241.3" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-27.94" x2="241.3" y2="-27.94" width="0.1524" layer="91"/>
+<junction x="241.3" y="-27.94"/>
 </segment>
 </net>
 </nets>
